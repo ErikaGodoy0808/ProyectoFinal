@@ -1,0 +1,157 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+     font-family: 'Poppins', sans-serif;
+     min-height: 100vh;
+     background: linear-gradient(to right, #333399, #ff00cc);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.login-card {                                  /*Tarjeta de adelante*/
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-card::before {                          /*Tarjeta de atrás*/
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.login-card-logo {                             /*Separa el logo del texto de abajo*/
+    margin-bottom: 2rem;
+}
+
+.login-card-logo img {                         /*Define el tamaño de la imagen del logo*/
+    width: 150px;
+}
+
+.login-card-logo,                       
+.login-card-header, 
+.login-card-footer {                           /*Alinea los elementos seleccionados en el centro de la página*/
+    text-align: center;
+}
+
+.login-card a {                                /*Da el estilo deseado a todos los links en la tarjeta de login*/
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-card a:hover {                          /*Al pasar los mouse en todos los links estos tendrán subrayado*/
+    text-decoration: underline;
+}
+
+.login-card-header {                           /*Separa el texto de la cabecera de los campos de texto*/
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {                        /*Da estilo al título de "Sign in"*/
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+
+.login-card-form {                             /*Da estilo al formulario*/
+    display: flex;
+    flex-direction: column; /*Hace que los elementos estén alineados en forma de columna*/
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {                  /*Ubica los iconos de los campos de texto*/
+    position: relative;
+}
+
+.icon-eye {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+.icon-eye:hover {
+    color: #333399;
+}
+
+.login-card-form .form-item .form-item-icon {  /*Ubica los iconos del campo de texto*/
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-card-form .checkbox {                   /*Da formato al checbox*/
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-footer {                           /*Ubica y selecciona la fuente del footer*/
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-card input[type="text"],                /*Da formato a los campos de texto*/
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus {                     /*Hace que al seleccionar los input estos se pongan blancos*/
+    background: white;
+}
+
+
+.login-card-form button {                     /*Da el formato que deseemos a los botones*/
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.login-card-form button:hover {               /*Establece lo que queremos que haga el botón cuando pasemos el mouse*/
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-card {
+        width: 300px;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
