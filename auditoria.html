@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_auditoria.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-auditoria-izquierda">
+            <div class="header-auditoria">
+                <h1>Bienvenido a nuestro módulo de seguridad</h1>
+                <p>Las siguientes preguntas le ayudarán a realizar una evaluación sobre la seguridad que presenta su empresa</p>
+            </div>
+            <div class="contenido-auditoria">
+                <table class="table-auditoria">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Si</th>
+                            <th>No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label>¿Cuantifican y despliegan los recursos asignados a la 
+                                seguridad de la información ya sea de hardware, software, personal 
+                                interno, entro otros. dentro de la organización ?</label></td>
+                            <td><input id="Boton" type="radio" name="b1" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b1" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Se cuenta con una directiva que revise la seguridad de la 
+                                información en intervalos planificados o lleven control de cambios
+                                 significativos dentro de la entidad? </label></td>
+                            <td><input id="Boton" type="radio" name="b2" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b2" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿La diferencia entre el número total de auditorías realizadas
+                                 en comparación con el total de planificadas en seguridad de la 
+                                 información,no superan el 10% de diferencia?(Ejemplo: 15 auditorías 
+                                 realizadas vs 12 planificadas = 90% de 15 : 13,5 -> no cumple)</label></td>
+                            <td><input id="Boton" type="radio" name="b3" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Se clasifican los posibles riesgos en los reporte o incidentes
+                                 de seguridad. Estableciendo si en efecto es un aspecto sensible en 
+                                 los sistemas de información o no se da la misma clasificación? </label></td>
+                            <td><input id="Boton" type="radio" name="b4" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b4" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>En una muestra del 10% de los equipos de cómputo. Ya sean portátiles, 
+                                computadoras de mesa, servidores , etc.. ¿Del 100% al menos un 93% cuenta con 
+                                cifrado para manipularlo o acceder a cualquier tipo de información dentro de 
+                                este? (Ejemplo: de 150 equipos , se toman 15 para la muestra, donde se encuentra
+                                que 14 si tiene cifrado en su acceso.-> Si cumple con un 93,3% )</label></td>
+                            <td><input id="Boton" type="radio" name="b5" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b5" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿La empresa cuenta con un antivirus, firewall, ofimática, programas y
+                                 VPN (Red privada virtual) según necesidad. Certificadas y con licenciamiento 
+                                 original?</label></td>
+                            <td><input id="Boton" type="radio" name="b6" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Se cuenta con métodos para la recopilación de información. En donde se 
+                                puede revisar las actualizaciones, instalación de programas, mantenimiento a 
+                                cada de equipo de cómputo?</label></td>
+                            <td><input id="Boton" type="radio" name="b7" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b7" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Las instalaciones físicas como los cuartos de los equipos con información 
+                                valiosa cuentan con restricciones en cuanto al paso del personal autorizado dentro 
+                                de la organización. Además de estar ubicados es espacios que están libres de sufrir
+                                algún incidente como inundaciones, incendios, entre otras emergencias?</label></td>
+                            <td><input id="Boton" type="radio" name="b8" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b8" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿La entidad cuenta con una planta eléctrica con la respectiva normativa 
+                                que proteja los equipos informáticos de mayor importancia, ya sea por su valor 
+                                en cuanto a información o utilización en procesos estratégicos en la producción? </label></td>
+                            <td><input id="Boton" type="radio" name="b9" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b9" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>¿Se tiene programada una inducción o conversatorio que trate temas como 
+                                acceso, control y divulgación de la información o seguridad y tratamiento de 
+                                los datos que orienten a mejorar hábitos en los empleados de la empresa?</label></td>
+                            <td><input id="Boton" type="radio" name="b10" value="10"></td>
+                            <td><input id="Boton" type="radio" name="b10" value="0"></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <button type="submit">Finalizar</button>
+            </div>
+        </div>
+        <div class="card-auditoria-derecha">
+            <img src="Images/radio.jpg" alt="">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
